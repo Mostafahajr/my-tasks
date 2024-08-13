@@ -1,0 +1,45 @@
+
+body{
+    background-image: url("banner.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3000px;
+
+}
+
+
+
+div{
+    text-align: center;
+}
+
+
+h2{
+    font-size: 30px;
+    color: red;
+    
+}
+
+p{
+    font-size: 20px;
+    color: rgb(213, 218, 226);
+    text-decoration: underline;
+    line-height: 1.5;
+    word-spacing: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}

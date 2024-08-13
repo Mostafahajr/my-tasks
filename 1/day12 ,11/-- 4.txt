@@ -1,0 +1,21 @@
+-- 4
+
+update department set mgrssn = 968574
+where dnum = 100;
+update department set mgrssn = 102660
+where dnum = 20;
+
+-- 5
+
+update department set mgrssn=102672
+where mgrssn =223344;
+update works_for set essn =102672
+where essn = 223344;
+update employee set  superssn=102672
+where superssn = 223344;
+delete from employee where ssn = 223344;
+
+--  6
+
+update employee set salary = salary *1.2
+where ssn = 102672;

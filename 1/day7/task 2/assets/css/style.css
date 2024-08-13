@@ -1,0 +1,54 @@
+/* -----------------form style ------------------- */
+body {
+    background-color: #eee;
+}
+form{
+    width: 30%;
+    transform: translatey(30%);
+    margin: auto;
+    background-color: #fefefe;
+    padding: 50px;
+    border: 1px solid #13131328;
+    border-radius: 5px;
+    box-shadow: #333 1px 2px 7px;
+
+}
+
+
+form .form-group{
+    width: 100%;
+    margin: 20px 10px;
+}
+
+form .form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+form .form-group input{
+    width: 100%;
+    padding: 10px;
+    outline: solid 1px #555d6228;
+    border: 1px solid #b1e0ff28;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+form .form-group input[type = submit]{
+    width: 50%;
+    transform: translateX(50%);
+}
+
+form .form-group p{
+    color: red;
+    font-size: .8rem;
+}
+
+form .form-group input[type = submit]:hover{
+    background-color: #ddd;
+}
+
+
+
+
+
+/* ----------------- end form style ------------------- */

@@ -1,0 +1,15 @@
+img{
+    width: 300px;
+    height: 300px;
+    transition: ease-out 1s;
+
+}
+
+div{
+    display: grid;
+    place-items: center;
+}
+
+button{
+    display: block;
+}

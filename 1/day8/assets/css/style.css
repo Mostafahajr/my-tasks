@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: url("../images/background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+} */
+
+form{
+    width: 30%;
+    margin: 50px auto;
+    padding: 3rem 5rem;
+    text-align: center;
+    box-shadow: #afafaf 1px 2px 7px;
+    background-color: transparent;
+}
+form h2{
+    margin-bottom: 2rem;
+   
+}
+form .line{
+    height: 1px;
+    width: 100%;
+    background-color: #100f0f72;
+    margin-bottom: 2rem;
+}
+
+form .inputgroup{
+    width: 100%;
+    
+    margin-bottom:1rem ;
+    
+}
+form p{
+    color: red;
+    font-size: .8rem;
+}
+form .inputgroup input.dataInput{
+    width: 100%;
+    padding: .5rem;
+    border: #33333300;
+    transition: all 1s ease;
+    outline: none;
+    border-bottom: 1px solid #999;
+    border-radius: 5px;
+    background-color: transparent;
+    
+    font-size: 20px;
+}
+form .inputgroup input[type= submit]{
+    width: 50%;
+    padding: 5px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .inputgroup input:focus{
+    box-shadow: #d8d7d7 1px 2px 7px;
+       
+}

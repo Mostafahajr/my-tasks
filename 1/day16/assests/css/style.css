@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login table{
+    
+    width: 50%;
+}
+
+.login table td{
+    margin: 0;
+}
+
+.login table img{
+    width: 40px;
+    
+    border: 1px solid #dddddd4b;
+    position: relative;
+    left: 70%;
+    top: 2px;
+
+
+    
+}
+
+.login table input{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #dddddd6b;
+    
+}
+
+
+.login table .line{
+    background-color: #2222224c;
+    height: 1px;
+    margin: 10px 5px;
+
+}
+.login table button{
+    position: relative;
+    left: 90%;
+    padding: 5px 20px;
+    background-color: #4cc64c;
+    margin: 10px;
+}
+
+
+
+
+/*------------------------------------  */
+
+.container{
+    display: flex;   
+    height: 100vh;
+    width: 100%;
+}
+
+.container .sideBar{
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+    background-color: #000000d9;
+    color: rgba(227, 230, 234, 0.532);
+
+}
+
+.container .sideBar ul{
+    padding: 20px;
+    list-style: none;
+
+}
+.container .sideBar ul li{
+    margin: 10%;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+.container .center {
+    width: 100%;
+    
+
+}
+.container .center nav{
+    width: 100%;
+    background-color: #111;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(240, 255, 255, 0.679);
+}
+.container .center nav img{
+    width: 40px;
+    
+    right: 10px;
+
+}
+.container .center .content {
+    background-color: #eee;
+    height: 100vh;
+}
+.container .center .content .content_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    
+}
+.container .center .content .content_header a{
+    color: rgb(161, 228, 245);
+}
+
+.container .center .content .basicDatabase{
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+.container .center .content .basicDatabase .filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px;
+}
+.container .center .content .basicDatabase table{
+    width: 100%;
+    margin: 10px;
+
+}
+.container .center .content .basicDatabase table td{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+
+}
+.container .center .content .basicDatabase table tr:nth-child(even){
+    background-color: #eee;
+}
+/* --------------------------------------------------- */
+
+
+.centerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    margin: 30px;
+}
+
+
+
+
+
+form{
+    width: 70%;
+    height: 100%;
+    padding: 20px 30px;
+    
+    
+    border-radius: 5px;
+    
+    
+}
+
+form table{
+    width: 100%;
+    
+    
+   
+}
+form table tr td{
+    padding: 15px 0px;
+}
+.inputForm{
+   padding: 10px;
+   width: 100%;
+   border-radius: 5px;
+   font-size: 15px;
+}
+
+.btn {
+    padding: 5px 20px;
+    margin: 5px;
+    border: 1px solid #666666ad;
+    border-radius: 5px;
+}
+table td>div{
+    float: right;
+    padding: 20px 35px;
+}
+.btnSubmit{
+    background-color: #03c703;
+}
+.btnReset{
+    background-color: #f33d3dd9;
+}
+
+table p{
+    font-size: 13px;
+}
+

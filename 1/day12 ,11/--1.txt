@@ -1,0 +1,229 @@
+1- 
+
+SELECT * from employee;
+
+
+2-
+
+SELECT fname,lname,salary,dno FROM employee;
+
+
+3-
+
+SELECT pname,plocation,dnum FROM project;
+
+
+4-
+
+SELECT concat(fname , " " , lname),(salary*12)*.1 as "annual com" FROM employee;
+
+
+5-
+
+SELECT ssn,concat(fname," ",lname) from employee where salary > 1000;
+
+
+6-
+SELECT ssn,concat(fname," ",lname) from employee where salary*12 > 10000;
+
+
+7-
+
+SELECT concat(fname," ",lname) as "name",salary FROM employee WHERE gender = "f";
+
+
+8- 
+
+select dnum,dname from department where mgrssn = 968574;
+
+9-
+
+
+SELECT pnumber,pname,plocation from project where dnum = 10;
+
+-- 10 
+select dnum,dname,mgrssn from department;
+
+-- 11
+
+select department.dname, project.pname from department join project 
+on department.dnum = project.dnum;
+
+-- 12
+
+select dependent.* from dependent join employee 
+on dependent.essn = employee.ssn;
+
+-- 13
+
+ select dependent.dependent_name,dependent.gender
+ from dependent 
+ join employee 
+ on dependent.essn = employee.ssn and employee.gender ="f" 
+ where  dependent.gender = "f";
+
+
+
+
+
+14-
+
+SELECT * FROM employee WHERE dno in(10,20,30);
+
+15-
+
+SELECT pnumber, pname,plocation from project WHERE city in ("cairo","Alex");
+
+
+16-
+
+SELECT * from employee WHERE dno = 30
+and salary BETWEEN 1000 and 2000;
+
+
+17-
+
+SELECT * from project WHERE pname LIKE "a%";
+
+--  18
+
+select employee.* from employee join works_for
+on employee.ssn = works_for.essn and works_for.hours >= 10
+join project 
+on works_for.pno = project.pnumber
+and project.pname = "AL Rabwah";
+
+-- 19
+
+
+select * from employee
+where superssn =(
+select ssn
+from employee
+where fname = 'kamel');
+
+
+-- 20
+
+select project.pname,sum(works_for.hours)
+from project , works_for
+where  project.pnumber = works_for.pno
+group by project.pname;
+
+
+--  21
+select concat(fname," ",lname) as full_name
+from employee join works_for
+on employee.ssn = works_for.essn
+join project
+on works_for.pno = project.pnumber;
+
+-- 22
+
+select * from department
+join employee 
+on department.dnum = employee.dno and
+employee.ssn =(select min(ssn)
+from employee
+);
+
+-- 23
+ 
+ select max(e.salary) as max,min(e.salary) as min,avg(e.salary) as avgSalary,d.dname
+ from employee e
+ join department d
+ on e.dno = d.dnum
+ group by dname;
+ 
+-- 24
+
+
+select * from employee
+where ssn not in (
+select e.ssn from employee e
+join dependent d
+on e.ssn = d.essn);
+ 
+ -- 25 
+ 
+select concat(e.fname," ",e.lname) as full_name,p.pname from 
+employee e 
+join 
+works_for w
+on e.ssn = w.essn
+join project p
+on p.pnumber = w.pno
+order by p.pname,e.fname;
+
+
+--  26
+
+select p.pname,p.pnumber,d.dname,e.lname,e.address,e.bdate
+from project p
+join
+department d
+on p.dnum = d.dnum
+join
+employee e
+on
+e.ssn = d.mgrssn
+where 
+p.city = "cairo";
+
+
+
+
+
+1-
+
+INSERT into employee (fname,lname,ssn,bdate,address,gender,salary,superssn,dno) VALUES ('mostafa','ibrahim',102672,'2001/03/01','menya elqamh','m',1800,112233,30);
+
+
+2-
+
+
+INSERT into employee (fname,lname,ssn,bdate,address,gender,dno) VALUES ('abdallh','tallat',102660,'2001/03/01','menya elqamh','m',30);
+
+
+3-
+
+
+INSERT INTO department VALUES ("dept it",100,112233,"2006-11-01");
+
+
+-- 4
+
+update department set mgrssn = 968574
+where dnum = 100;
+update department set mgrssn = 102660
+where dnum = 20;
+
+-- 5
+
+update department set mgrssn=102672
+where mgrssn =223344;
+update works_for set essn =102672
+where essn = 223344;
+update employee set  superssn=102672
+where superssn = 223344;
+delete from employee where ssn = 223344;
+
+--  6
+
+update employee set salary = salary *1.2
+where ssn = 102672;
+
+-- 7
+
+select distinct * from employee
+where ssn in(
+select ssn from employee
+join dependent 
+on employee.ssn = dependent.essn
+);
+
+
+
+
+
+
