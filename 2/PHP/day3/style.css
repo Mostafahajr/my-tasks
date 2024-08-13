@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+form{
+    margin: 20px auto;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #121321;
+    border-radius: 5px;
+    box-shadow: #767575 1px 3px 17px;
+
+}
+form .input-group{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+
+}
+form .input-group input.datainput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #12132156;
+}
+form .input-group:nth-child(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .input-group:nth-child(6) input{
+    margin: 20px 0px;
+    width: 50%;
+    background-color: rgba(0, 0, 253, 0.355);   
+    border-radius: 10px;
+    padding: 10px 50px;
+    transition: .5s ease;
+}
+form .input-group:nth-child(6) input:hover{
+    background-color: blue;
+}
+
+
+/* ------------------------------------------------------- */
+
+/* ====================+++++++============================= */
+
+/* ----------------------------------------------------------- */
+
+
+table{
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+}
+table tr{
+    border-bottom: #121321 1px solid;
+    width: 100%;
+    padding: 10px 5px;
+    
+}
+table thead
+{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+table tr td{
+    
+    width: 33.3%;
+    
+    border-right: 1px solid #33333320;
+    border-bottom: 1px solid #33333320;
+
+    padding: 10px 0px;
+    
+}
+
+table tr td img{
+    width: 50%;
+    border-radius: 50%;
+}
+

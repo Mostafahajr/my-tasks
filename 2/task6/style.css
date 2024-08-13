@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content:center ;
+    align-items: flex-start;
+    height: 100vh;
+    background-color:#204282 ;
+}
+button{
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    
+
+}
+.searchBtn{
+    width: 100%;
+}
+table{
+    margin: 20px;
+    width: 100%;
+    background-color: #204282;
+    border-radius:10px ;
+    padding: 10px;
+    color: aliceblue;
+}
+
+table tr td,th{
+    border-bottom: 1px solid #333;
+    
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="setTitleCase">
+            <input type="text" id="setData" name="setDataname" >
+            <button onclick="titleCase(inputvalue)">Click here</button>
+    
+            <p id="showData"></p>
+        </div>
+        
+
+        <hr>
+
+        <form action="#" >
+            <input type="text" id="enterTagName" placeholder="enter the tag name">
+            <input type="text" id="enterClassName" placeholder="enter the class name">
+            <input type="text" id="enterId" placeholder="entr the id">
+            <input type="text" id="enterNameAtt" placeholder="enter the name attribute">
+             <input type="submit" class="submitBtn" onclick="getInfo(getTagName,getClassName,getId,getNameAtt)">
+        
+             <p id="showformData"></p>
+            </form>
+
+       
+    </div>
+
+    <script src="task3.js"></script>
+</body>
+</html>

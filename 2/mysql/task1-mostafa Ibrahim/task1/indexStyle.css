@@ -1,0 +1,437 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    width: 100%;
+    
+    position: fixed;
+    
+  
+   
+}
+.menu_container{
+    width: 100%;
+   
+    z-index: 7;
+    position: absolute;
+    top: -37px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    
+}
+.menu_section ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.btn_contact{
+    padding: 20px;
+    background-color: rgb(89, 89, 240);
+    
+}
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+
+.landingSection{
+    background-image: url("images/im3.jpg");
+    height: 100vh;
+}
+
+.landingText{
+    width: 20%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+.landingText h1{
+    font-size: 65px;
+}
+h5{
+    font-size: 20px;
+    color: rgb(0, 183, 255);
+}
+h5 span{
+    position: relative;
+    top: -10px;
+}
+.landingText a{
+    padding: 20px;
+    background-color: rgb(89, 89, 240);
+    position: absolute;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.practingArea i{
+    font-size: 30px;
+}
+.practingArea{
+    padding: 100px;
+}
+.practingCards
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.card{
+    width: 30%;
+    margin-left: 50px;
+}
+.practingCards .card img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+
+.lawAgencyContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(48, 48, 219);
+    color: white;
+}
+.lawAgencyImage{
+    margin-right: 20px;
+}
+.lawAgencyImage img{
+    width: 90%;
+}
+.lawAgencyInfo{
+    width: 30%;
+}
+.lawAgencyInfo a{
+    padding: 10px 20px;
+    background-color: rgb(2, 2, 37);
+    
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.fillUp{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    
+}
+.fillUp>div{
+    
+    width: 50%;
+    padding: 50px;
+    background-color: rgb(48, 48, 219);
+}
+
+.fillUp td{
+    margin: 10px;
+}
+
+.fillUp>div textarea{
+    padding: 10px;
+}
+
+.fillUp>div .submitBtn{
+    background-color: rgb(2, 2, 37);
+    width: 100%;
+    color: white;
+}
+.fillUp form input{
+    width: 70%;
+    padding: 20px;
+}
+.fillUp form select{
+    width: 76%;
+    padding: 20px;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+form div input,select{
+    margin: 20px;
+}
+.fillUp h1{
+    width: 45%;
+    color: white;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.recentWorkInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px;
+    padding: 20px 50px;
+}
+.recentWorkInfo .active{
+    color:rgb(0, 183, 255) ;
+}
+.recentWorkInfo span{
+    margin: 0px 10px;
+}
+
+
+.recentWorkCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+    
+}
+
+.recentWorkCards .card{
+    width: 45%;
+}
+
+.recentWorkCards .card img{
+    width: 100%;
+}
+.recentWorkCards .card .cardText h5{
+    font-size: 15px;
+}
+.recentWorkCards .card .cardText h5 span{
+    top:-6px
+}
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+.searchSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-image: url("images/im15.png");
+    padding: 20px;
+}
+.searchSection h1{
+    font-size: 40px;
+    width: 30%;
+}
+.searchSection a{
+    background-color: rgb(2, 2, 37);
+    padding: 15px 30px;
+
+    color: rgb(177, 174, 174);
+}
+
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+
+.ourLawersSection{
+    padding: 30px;
+}
+.ourLawersSection h1{
+    width: 25%;
+}
+.ourLawersSection .ourlawers .lawyerCardInfo h5{
+    font-size: 12px;
+}
+.ourLawersText{
+    margin-left: 35px;
+}
+.ourlawers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ourLawersSection .ourlawers .lawyerCardInfo h5 span{
+    top:-6px;
+}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+
+.opinionSection{
+    background-image: url("images/im11.png");
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+.opinionInfo{
+    width: 50%;
+}
+.opinionInfo h2{
+    font-size: 60px;
+    font-weight: 900;
+}
+.opinionChifInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opinionChifInfo img{
+    margin-right: 10px;
+}
+.opinionChifInfo p{
+    color: #999;
+}
+.opinionSection span{
+    
+    padding: 15px;
+    border: 1px solid rgba(153, 153, 153, 0.493);
+    height: fit-content;
+    border-radius :25%;
+    position: absolute;
+    color: #666;
+}
+.opinionSection span.left{
+    left: 50px;
+    top: 50%;
+}
+.opinionSection span.right{
+    right: 50px;
+    top: 50%;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+.ideaCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ideaCards .ideacardContainer img{
+    width: 100%;
+    
+}
+.ideaCards .ideacardContainer{
+    width: 40%;
+    padding: 20px;
+}
+.ideaCards .ideacardContainer>div{
+    width: 100%;
+    position: relative;
+}
+.ideaCards .ideacardContainer .cardImage p{
+    position: absolute;
+    bottom:-11px;
+    padding: 18px 50px;
+    background-color: white;
+    text-align: center;
+}
+.trendsSection{
+    padding: 50px;
+}
+
+.ideaCards .ideacardContainer h5{
+    font-size: 15px;
+}
+.ideaCards .ideacardContainer h5 span{
+    top:-6px
+}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+.footerInfo ul li{
+    list-style: none;
+    margin: 10px 5px;
+}
+.footerInfo ul li input{
+    background-color: rgba(51, 51, 51, 0.753);
+    padding: 5px;
+}
+.footerInfo ul li a{
+    padding: 5px 10px;
+
+    background-color: rgb(19, 18, 18);
+    color: rgb(17, 17, 107);
+}
+.footer{
+    background-image: url("images/im14.jpg");
+    padding: 100px;
+    color: #999;
+}
+.footer hr{
+    background-color: rgba(102, 102, 102, 0.322);
+}
+.footerInfo{
+    
+    
+    display: flex;
+    padding: 50px;
+    width: 100%;
+
+}
+.footerInfo img{
+    color: #fff;
+}
+.footerInfo>div{
+    width: 25%;
+}
+.footerInfo .footerHeader{
+    color: #eee;
+    margin-bottom: 30px;
+}
+.line{
+    height: 2px;
+    background-color: rgba(12, 21, 46, 0.575);
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social .socialIcons i{
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+p.myphone span{
+
+    margin-right:5px;
+}
+.numcolored{
+    color: rgb(4, 0, 255);
+}

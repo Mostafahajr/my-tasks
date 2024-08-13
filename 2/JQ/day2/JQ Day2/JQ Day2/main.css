@@ -1,0 +1,17 @@
+#container
+{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+}
+#container-reversed
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display:  none;
+}
+#holder p{
+    background-color: coral;
+}

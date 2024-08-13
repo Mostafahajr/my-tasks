@@ -1,0 +1,46 @@
+/* .tab{
+    padding: 5px;
+    background-color: azure;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #33333336;
+    border-radius: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.content{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.posts td{
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid #333;
+} */
+
+
+ul{
+    list-style: none;
+    padding: 20px;
+    
+    border-radius: 10px;
+
+}
+ul li{
+    background-color: aqua;
+    margin: 1rem auto;
+    padding:.5rem 3rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 50% ;
+    cursor: pointer;
+
+
+}
+
+#content{
+    padding: 3rem;
+    
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="getFormDataStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contanier">
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td rowspan="2">name</td>
+                    <td><input type="text" id="userName" class="inputForm"></td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">Email</td>
+                    <td><input type="email" id="userEmail" class="inputForm"></td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">password</td>
+                    <td> <input type="password" id="userPassword" class="inputForm"></td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">gender :</td>
+                    <td>
+                        male <input type="radio" name="gender" value="male">
+                        female <input type="radio" name="gender" value="female"> 
+                        
+                    </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">sports :</td>
+                    <td>
+                        football <input type="checkbox" name="sports" value="football">
+                        tennis <input type="checkbox" name="sports" value="tennis">
+                        baskit <input type="checkbox" name="sports" value="baskit">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="2">country:</td>
+                    <td>
+                        <select name="country" id="country" class="inputForm">
+                            <option value=""></option>
+                            <option value="egypt">egypt</option>
+                            <option value="sudan">sudan</option>
+                            <option value="libya">libya</option>
+                            <option value="algeria">algeria</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Error"></p>
+                    </td>
+                </tr>
+                
+                <tr class="">
+                    <td colspan="2">
+                        <div>
+                            <button onclick="validateForm(event)" id="" class="btn btnSubmit">validate</button>
+                            <input type="reset" value="Reset" class="btn btnReset" onclick="resetForm()"class="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p class="success"></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+
+    <script src="code.js"></script>
+    
+</body>
+</html>

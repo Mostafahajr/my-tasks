@@ -1,0 +1,65 @@
+.container img{
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+
+}
+.container{
+
+   width: 100%;
+   
+   /* transform: translate(50%,20%); */
+}
+.container div{
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.slider{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.615);
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.slider span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgb(137, 137, 137);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+
+  
+.slider img{
+    width: 50%;
+    border-radius: 10px;
+}
+.slider div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.close-div{
+    width: 100%;
+    position: relative;
+}
+
+.close-div span{
+    position: absolute;
+    right: 25%;
+}
+
+.close-div span img{
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+ul{
+ list-style: none;
+
+}
+
+li{
+    padding: 10px;
+}
+
+.land{
+    background-image: url("../images/drone_1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.content_info{
+    color: aliceblue;
+}
+

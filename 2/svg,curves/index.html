@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      .move{
+        transform: translateX(50px);
+        margin: 10px;
+        
+      }
+      svg{
+        text-align: center;
+      }
+      .card{
+        width: 220px;
+        height: 300px;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: antiquewhite;
+        color: red;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+      }
+      .rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+      /* canvas{
+        width: 80%;
+        margin: 20px;
+        height: 300px;
+        border: 1px solid #000;
+      } */
+    </style>
+</head>
+<body>
+<div class="card">
+  <h3 class="rye-regular">A</h3>
+  <div class="move">
+    
+    <svg >
+      <path fill="#0070f3" d="M 50,75 C 65,100 114,75 80,40 L 50,10 L 20,40 C -14,80 35,100 50,75"></path>
+      <path fill="#0070f3" d="M 50,75 L 70,100 L 30,100 L 50,75"></path>
+    </svg>
+   
+  </div>
+  <h3 class="rye-regular" style="float: right;">A</h3>
+</div>
+    
+    
+
+    <div>
+      <input type="color" id="inputColor">
+      <button id="changeColor">change Color</button>
+      <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+
+    </div>
+
+   <script src="code.js"></script>
+</body>
+</html>

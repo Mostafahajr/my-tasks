@@ -1,0 +1,170 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+.header ul{
+    margin: auto;
+}
+.header li{
+    display: inline-block;
+    margin:5px 10px;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+/* ---------------------------------- */
+
+.comment{
+    text-align: center;
+    background-color: #111;
+    color:#eee;
+    padding: 1px;
+}
+.comment p span{
+    color: #694421;
+    margin: 2px 5px;
+    font-size: 20px;
+}
+
+
+
+/* -------------------------------------- */
+
+.landing{
+    background-image: url("h1_hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    position: relative;
+}
+
+.landing .content h3{
+    color: #111;
+}
+.landing .content{
+    width: 30%;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left:15%;
+    color: #999;
+    font-weight:bold ;
+}
+
+
+
+/* -------------------------- */
+
+.container{
+    margin: 50px 100px;
+}
+
+
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    position: relative;
+}
+.container .card div{
+    height: 100%;
+    background-color: #11111118;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    
+    right: 0;
+}
+.container .card img{
+    width: 100%;
+}
+.container .card h2{
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    color: aliceblue;
+}
+
+
+
+
+
+
+/* --------------------------------- */
+
+.trending{
+    margin: 50px 100px;
+}
+
+.trending h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.trending p{
+    color: #999;
+}
+
+
+.trending .line{
+    width: 100%;
+    height: 1px;
+    background-color: #11111137;
+    margin: 20px 0px;
+}
+
+.trending .card{
+    text-align: center;
+}
+
+
+/* ------------------------- */
+
+
+.opinion{
+    background-color: #F3EAD8;
+    padding: 50px;
+    text-align: center;
+}
+
+.opinion div div{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.opinion div div span{
+    color: #999;
+}
+
+
+/* ---------------------------------------- */
+
+.footer{
+    text-align: center;
+    color: #999;
+    background-color: #111;
+    
+}
+.footer ul{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.footer ul li{
+    margin: 20px 10px;
+    padding: 10px 30px;
+    border-top: .5px solid #7572725f;
+    border-radius: 10px;
+
+}

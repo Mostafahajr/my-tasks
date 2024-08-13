@@ -1,0 +1,32 @@
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-100{
+    width: 100%;
+}
+
+
+
+.photoSelector .images .active{
+    display: grid;
+}
+.photoSelector .images img{
+    /* display: none; */
+    width: 300px;
+    height: 300px;
+}
+
+.photoSelector{
+   
+    width: 100%;
+    
+}
+
+.photoSelector .controls button{
+    padding: 5px 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    background-color: azure;
+}

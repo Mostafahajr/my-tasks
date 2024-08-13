@@ -1,0 +1,252 @@
+2- 
+
+	select date_format(examdate,'%D %M %Y') from exam;
+
++-------------------------------------+
+| date_format(ex.examdate,'%D %M %Y') |
++-------------------------------------+
+| 1st June 2024                       |
+| 15th June 2024                      |
+| 10th June 2024                      |
+| 20th June 2024                      |
+| 25th June 2024                      |
+| 9th June 2024                       |
++-------------------------------------+
+
+
+
+3- 
+
+	 select concat(fname," ",lname) as name , floor(datediff(curdate(),birthdate) /365) as age from student;
++--------------+------+
+| name         | age  |
++--------------+------+
+| mohamed hajr |   40 |
+| ahmed hajr   |   37 |
+| shimaa hajr  |   36 |
+| menaa hajr   |   20 |
+| mostafa hajr |   23 |
+| shimaa hajr  |   36 |
++--------------+------+
+
+
+4- 
+
+
+	 select concat(s.fname," ",s.lname) as name,round(ex.score) from student s,exam ex
+    ->  where s.studentid = ex.studentid;
++--------------+-----------------+
+| name         | round(ex.score) |
++--------------+-----------------+
+| mohamed hajr |              85 |
+| mohamed hajr |              90 |
+| ahmed hajr   |              78 |
+| ahmed hajr   |              88 |
+| shimaa hajr  |              92 |
+| shimaa hajr  |              86 |
++--------------+-----------------+
+
+
+
+5-  
+
+	 select concat(fname," ",lname) as name,year(birthdate) as birth_year  from student;
++--------------+------------+
+| name         | birth_year |
++--------------+------------+
+| mohamed hajr |       1983 |
+| ahmed hajr   |       1987 |
+| shimaa hajr  |       1987 |
+| menaa hajr   |       2004 |
+| mostafa hajr |       2001 |
+| shimaa hajr  |       1987 |
++--------------+------------+
+
+
+
+6- 
+
+ alter table exam add column date;
+
+ update exam set curdate = now();
+
+7-
+
+	
+mysql> CREATE FUNCTION hello_world(username VARCHAR(255))
+    -> RETURNS VARCHAR(255)
+    -> DETERMINISTIC
+    -> BEGIN
+    ->     RETURN CONCAT('Welcome, ', username, '!');
+    -> END //
+
+ select hello_world("mostafa") as message;
++-------------------+
+| message           |
++-------------------+
+| Welcome, mostafa! |
++-------------------+
+
+
+8- 
+
+
+	DELIMITER //
+	CREATE function multiply(num1 double,num2 double )
+	returns double
+	deterministic
+	begin
+	return num1*num2;
+	end //
+	
+
+	select multiply(2,3);
++---------------+
+| multiply(2,3) |
++---------------+
+|             6 |
++---------------+
+
+
+
+
+9-
+
+
+DELIMITER //
+create function score(sid int , exid int)
+returns int
+deterministic
+begin
+declare student_score int;
+select score into student_score from exam 
+where StudentID = sid and ExamID = exid;
+
+return student_score;
+end //
+
+
+
+select score(1,1) as score;
+
+
+
++---------------+
+|     score     | 
++---------------+
+|       85      |
++---------------+
+
+
+
+
+
+10-
+
+
+DELIMITER // 
+create function sfail(exid int)
+returns int
+deterministic
+begin
+declare counter int;
+select count(*) into counter from exam
+where score < 80 and ExamID = exid;
+return counter;
+end //
+
+
+select sfail(1) as fail;
+
+
+
+
+11. Create function which take subject name and return the average of max
+grades for subject
+
+CREATE TABLE Deleted_Students AS
+SELECT * 
+FROM student 
+WHERE 1 = 0;
+
+
+12. Create Table called Deleted_Students which will hold the deleted students
+info(same columns as in student tables)
+
+
+
+
+13. Create trigger to save the deleted student from Student table to
+Deleted_Students.
+
+
+
+ DELIMITER //
+mysql> create trigger after_delete
+    -> after delete on student
+    -> for each row
+    -> begin
+    -> insert into deleted_students
+    -> (studentid,fname,lname,birthdate)
+    -> values
+    -> (OLD.studentid,OLD.fname,OLD.lname,OLD.birthdate);
+    -> end //
+Query OK, 0 rows affected (0.01 sec)
+
+
+
+14. Create trigger to save the newly added students to Student table to
+Backup_Students.
+
+ DELIMITER //
+mysql>  create trigger after_add
+    ->  after insert on student
+    -> for each row
+    -> begin
+    ->  insert into backup_students
+    ->  (studentid,fname,lname,birthdate)
+    -> values
+    -> (NEW.studentid,NEW.fname,NEW.lname,NEW.birthdate);
+    -> end //
+Query OK, 0 rows affected (0.01 sec)
+
+
+15. (Bouns) Create trigger to keep track the changes of contact info table
+(add/update rows); it will logs the time of action and description of
+action to another table.
+
+
+DELIMITER //
+
+CREATE TRIGGER after_contact_insert
+AFTER INSERT ON contact_info
+FOR EACH ROW
+BEGIN
+    INSERT INTO contact_info_log (contact_id, action_time, action_description)
+    VALUES (NEW.contact_id, NOW(), CONCAT('Inserted new contact with ID ', NEW.contact_id));
+END //
+
+
+
+16. Dump your database (Grading Database) into SQL file.
+
+ mysqldump -u root -proot camp < camp_dump.sql;
+
+17. Dump Students table into file.
+
+mysqldump -u root -proot GradingDatabase student > student_dump.sql
+
+
+18. Import SQL file into your backup database (Grading_Backup Database)
+
+	move by cd 
+
+	mysql -u root -proot Grading_Backup < students_dump.sql
+
+
+
+
+
+
+
+	

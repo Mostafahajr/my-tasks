@@ -1,0 +1,55 @@
+form{
+    width: 50%;
+    
+    padding: 20px 30px;
+    margin: 30px;
+    background-color: #eee;
+    border-radius: 5px;
+    position: relative;
+    
+}
+.contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 30px;
+
+}
+table{
+    width: 100%;
+    height: 80%;
+    
+   
+}
+.contanier  td .inputForm{
+   padding: 10px;
+   width: 100%;
+   border-radius: 5px;
+   font-size: 15px;
+}
+.formBtn{
+    position: absolute;
+    
+}
+.btn {
+    padding: 5px 20px;
+    margin: 5px;
+    border: 1px solid #666666ad;
+    border-radius: 5px;
+}
+table td>div{
+    float: right;
+    padding: 20px 35px;
+}
+.btnSubmit{
+    background-color: #03c703;
+}
+.btnReset{
+    background-color: #f33d3dd9;
+}
+
+table p{
+    font-size: 13px;
+}
+

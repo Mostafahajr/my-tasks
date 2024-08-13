@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav>
+        <header onclick="location.href='homePage.html'">
+            welcome
+            <span id="userName">
+                
+            </span>
+        </header>
+        <div class="links">
+            <ul>
+                <li onclick="location.href='homePage.html'">Home</li>
+                <li onclick="location.href='productsPage.html'">products</li>
+            </ul>
+        </div>
+        <span onclick="location.href='cartPage.html'">
+           cart(<span id="cartNum">0</span>)
+        </span>
+        <button onclick="cleardata()">
+            loggout
+        </button>
+        
+    </nav>
+
+    <div class="container">
+        <div class="sliderProducts">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="all" onclick="filterProducts(event)">All</th>
+                        <th id="phones" onclick="filterProducts(event)">Phones</th>
+                        <th id="laptobs"onclick="filterProducts(event)">Laptobs</th>
+                        <th id="devices"onclick="filterProducts(event)">Devices</th>
+                    </tr>
+                </thead>
+
+                
+            </table>
+
+            <div id="displayProducts">
+               
+            </div>
+        </div>
+       
+       
+        
+        
+    </div>
+
+    <div class="footer">
+        <div class="footerInfo">
+            <div>
+                <img src="images/logo.png" alt="">
+                <p>receive updates and latest news direct from simply enter</p>
+                <p class="myphone"><span>+564</span><span class="numcolored">7889</span><span class="numcolored">3222</span></p>
+                <p>your mail@gmail.com</p>
+            </div>
+            <div>
+                <ul>
+                    <li class="footerHeader">Our SUPPORT</li>
+                    <li>Advanced</li>
+                    <li>Management</li>
+                    <li>corporate</li>
+                    <li>customer</li>
+                    <li>information</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footerHeader">QUICK LINK</li>
+                    
+                    <li> About</li>
+                    <li> Privacy Policy</li>
+                    <li>Licenses</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footerHeader">NEWSLATTER</li>
+                    <li>Subscribe</li>
+                    <li><input type="email" name="" id="" placeholder="Email Address">
+                        <a href="mailto:example@example.com">send</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+        </div>
+        <div class="line">
+    
+        </div>
+        <div class="social">
+            <p>copyright @2021 all rights reserved</p>
+            <div class="socialIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="productsPageCode.js"></script>
+</body>
+</html>

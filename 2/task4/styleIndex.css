@@ -1,0 +1,54 @@
+div{
+    width: 50%;
+    padding: 20px;
+
+}
+div input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin: 10px;
+}
+div input.submitBtn{
+    width: 50%;
+    position: relative;
+    
+    left: 28%;
+}
+
+table{
+    border-top: 1px solid #444434;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+table thead {
+    border-bottom: 1px solid #444434;
+}
+
+table thead th,table tbody tr{
+    border-bottom: 1px solid #444434;
+    padding: 5px;
+}
+table button{
+    padding: 10px 20px;
+    background-color: darkturquoise;
+    border-radius: 10px;
+
+}
+
+.container{
+    position: relative;
+    left: 25%;
+}
+
+
+
+/* ----------------------------------------------- */
+
+
+
+/* ---------------------------------------------- */
+
+
+

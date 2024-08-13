@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.parent_flex{
+
+background-color: beige;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+flex-shrink: 0;
+height: 70%;
+width: 80%;
+
+}
+
+.parent_flex div{
+    padding: 10px;
+}
+
+.parent_flex .header{
+    width: 100%;
+    background-color: blue;
+    color: aliceblue;
+    flex-basis: 2;
+    border-radius: 5px;
+
+
+}
+.parent_flex .sideBar,.parent_flex .artical,.parent_flex .images_content{
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: 5px;
+
+}
+.parent_flex .footer{
+    width: 100%;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+.parent_flex .images_content{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    padding: 20px;
+}
+.parent_flex .images_content div{
+    width: 40%;
+    margin: 10px;
+    background-color: brown;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+
+.parent_grid{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:"head head head"
+                        "side artical images"
+                        "side artical images"
+                        "foot foot foot";
+    gap: 10px;
+    width: 70%;
+    height: 80%;
+    background-color: aquamarine;
+
+    padding: 20px;
+}
+
+.parent_grid div{
+    padding: 10px;
+
+    background-color: beige;
+}
+.parent_grid .header{
+    grid-area: head;
+    
+}
+.parent_grid .sideBar{
+    grid-area: side;
+}
+.parent_grid .artical{
+    grid-area: artical;
+}
+.parent_grid .images_content{
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    grid-template-areas:". . ."
+                        ". . ."
+                        "image1 image2 image3" ;
+    
+
+}
+
+.parent_grid .images_content div{
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+.parent_grid .images_content .image1{
+    grid-area: image1;
+}
+.parent_grid .images_content .image2{
+    grid-area: image2;
+}
+.parent_grid .images_content .image3{
+    grid-area: image3;
+}
+
+.parent_grid .footer{
+    grid-area: foot;
+}
+
+
+/* ----------------------------------------------------- */
+
+.image_opacity{
+    width: 300px;
+    height: 400px;
+   
+}
+
+@keyframes opaNone{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.image_opacity:not(:hover){
+    animation-name: opaNone;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.image_opacity img{
+    width: 100%;
+}
+
+.image_opacity:hover{
+    animation-name: opa;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes opa{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+.rapperBall{
+    width: 70%;
+    height: 500px;
+    border: 1px solid #333;
+    background-color: aqua;
+    margin: 100px;
+    position: relative;
+    
+}
+
+.rapperBall .ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: rapper 4s ease infinite;
+    bottom: 0;
+    left: 50%;
+    border: 1px solid #333;
+    position: absolute;
+    background-color: #333;
+}
+
+@keyframes rapper{
+    0%{
+        bottom: -3px;
+        left: 50%;
+    }
+
+    50%{
+        bottom: 300px;
+        left: 50%;
+    }
+    100%{
+        bottom: -3px;
+        left: 50%;
+    }
+}
+
+
+/* -------------------------------------- */
+
+.btnHover{
+    transform: translateX(50%);
+    margin-bottom: 100px;
+}
+.btnHover button{
+    padding: 10px 50px;
+    box-shadow: 1px 1px 7px #333;
+    border-radius: 5px;
+    
+
+}
+.btnHover button:hover{
+    animation: changeShadow 10s ease infinite alternate;
+    transition: 3s ease;
+}
+@keyframes changeShadow{
+    0%{
+        box-shadow: 1px 1px 7px 10px#c96e6e;
+        background-color:#c96e6e ;
+    }
+    20%{
+        box-shadow: 1px 1px 7px 10px#98c32c;
+        background-color:#98c32c ;
+
+    }
+    40%{
+        box-shadow: 1px 1px 7px 10px#30c947;
+        background-color:#30c947 ;
+
+    }
+
+    60%{
+        box-shadow: 1px 1px 7px 10px #373fda;
+        background-color:#373fda ;
+
+    }
+
+    80%{
+        box-shadow: 1px 1px 7px 10px #c943b7;
+        background-color:#c943b7 ;
+
+    }
+    100%{
+        box-shadow: 1px 1px 7px 10px #333;
+        background-color:#333 ;
+
+    }
+
+}

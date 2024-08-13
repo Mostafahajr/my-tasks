@@ -1,0 +1,70 @@
+.container{
+    background-color: #fffefe;
+    height: 100vh;
+}
+
+.setTitleCase{
+    background-color: #eee;
+    height: 25%;
+    text-align: center;
+}
+.setTitleCase input{
+    padding: 10px;
+    border-radius: 10px 0 0px 10px;
+    outline: none;
+    position: relative;
+    margin-right: 0;
+    top: 30%;
+    width: 300px;
+}
+.setTitleCase button{
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    outline: none;
+    position: relative;
+    top: 30%;
+    width: 100px;
+}
+.setTitleCase p{
+    padding: 10px;
+    position: relative;
+    top: 30%;
+}
+
+
+/* ============================= */
+
+form input{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;  
+    outline: none;
+     
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    background-color: #eee;
+    padding: 40px;
+    border-radius: 50px 0 50px 0;
+}
+form p{
+    text-align: center;
+}
+
+form p span{
+    margin: 5px;
+    display: inline-block;
+    
+}
+
+
+
+
+

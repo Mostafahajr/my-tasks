@@ -1,0 +1,39 @@
+.body_content{
+    height: 100vh;
+}
+
+li{
+    color: aliceblue;
+}
+
+.dataBox{ 
+    width: 25%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #33333305;
+    z-index: 2;
+    box-shadow: #22222222 1px 2px 7px;
+    border-radius: 5px;
+    height: 20rem;
+
+}
+.dataBox img{
+    width: 100%;
+    height: 50%;
+    background-color: #33333355;
+}
+
+.usersCounts{
+    width: 10%;
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    box-shadow: lightskyblue 1px 2px 7px;
+    text-align: center;
+}
+form{
+    border: 1px solid #33333310;
+    border-radius: .5rem;
+    box-shadow: #22222233 .1rem .2rem .7rem;
+    background-color: tra;
+}

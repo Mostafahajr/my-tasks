@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #77dd8d;
+    height: 100vh;
+    
+}
+
+
+
+form{
+    padding: 100px 50px;
+    background-color: #fff;
+    border:2px solid #2bdf52;
+    border-radius: 10px;
+}
+
+form>input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid #2bdf52;
+}
+form>div{
+    display: flex;
+    margin: 20px 5px;
+}
+
+.btn{
+    background-color: #2bdf52;
+}
+
+.showGenderInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+.showGenderInfo p>span{
+    color: red;
+    font-size: 20px;
+    margin: 0px 5px;
+}
